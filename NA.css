@@ -1,0 +1,80 @@
+/* Reset default margin and padding */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background animation */
+body {
+    background-image: url('WhatsApp Image 2023-09-03 at 10.05.26 AM.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the title */
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: rgb(20, 20, 20);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Center the booking container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent; /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow */
+}
+
+/* Style form labels and inputs */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 15px 1px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Center the form inputs */
+form input {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+}
